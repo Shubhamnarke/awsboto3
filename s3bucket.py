@@ -6,7 +6,7 @@ s3_clientme=boto3.client("s3")
 response = s3_clientme.list_buckets()['Buckets']
 
 # upload file
-# response = s3_clientme.upload_file('/Users/admin/Documents/simplek8s/client-deployment.yaml','shubhamapril2023s3','client-deployment.yaml')
+response = s3_clientme.upload_file('/Users/admin/Documents/awsS3new/data.json','16may2023shubham','mydata.json')
 
 # download file
 # response = s3_clientme.download_file('shubhamapril2023s3','first.py','first.py')
@@ -14,3 +14,4 @@ response = s3_clientme.list_buckets()['Buckets']
 # create buket
 # s3_clientme.create_bucket(Bucket="asalsknlasnalsnkasansa")
 
+print(response)
